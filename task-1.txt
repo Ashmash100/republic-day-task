@@ -1,0 +1,259 @@
+problem 1: Number plus 5
+
+addFive = (num) => {console.log(num+5)} 
+addFive(10) 
+
+
+problem 3: Minutes to seconds
+
+toSeconds = (input) => {console.log(input*60)}
+toSeconds(5)
+
+
+
+problem 4: string to integer
+
+toInteger = (string) => console.log(+string)
+toInteger('25')
+
+
+problem 5: Increment Number
+
+incrementNum = (num) => console.log(++num)
+incrementNum(10)
+
+
+
+problem 6: first element of array
+
+array = [1,2,3,4,5]
+getFirstElement = (array) => console.log(array[0])
+getFirstElement(array)
+
+
+
+problem 7: hours to seconds
+
+hoursToSeconds = (hour) => console.log(+hour*3600)
+hoursToSeconds(2)
+
+
+
+problem 8: perimeter of rectangle 
+
+perimeterOfRectangle = (length,breadth) => {
+    console.log(2*(length+breadth))
+}
+
+perimeterOfRectangle(5,6)
+
+
+
+problem 9: less than 100
+
+lessThan100 = (num1,num2) => {
+    if (num1+num2<100) console.log('true')
+    else console.log('false')
+} 
+
+lessThan100(5,200)
+
+
+
+problem 10:  Remainder
+
+remainder = (num1,num2) => console.log(num1%num2) 
+remainder(3,4)
+
+problem 11: count animals
+
+countAnimals = (turkey,horse,pigs) => {
+    a = turkey*2
+    b = horse*4
+    c = pigs*4
+    console.log(a+b+c)
+}
+
+countAnimals(5,2,8)
+
+
+
+problem 12: Frames per second
+
+printFrames = (num1,num2) => console.log(60*num1*num2)
+printFrames(10,25)
+
+
+
+problem 13: divisible by five 
+
+divisibleByFive = (num) => {
+    if (num%5 === 0) console.log('true')
+    else console.log('false')
+}
+
+divisibleByFive(-55)
+
+
+problem 14: Is Even 
+
+isEven = (num) => {
+    if(num%2 === 0) console.log('true')
+    else console.log('false')
+}
+isEven(10)
+
+
+
+Problem 15: get full name 
+
+getFullName = (firstName = '',LastName = '') => console.log(firstName + ' ' + LastName)
+
+getFullName('Joseph')
+
+
+Problem 16:  Get Word Length
+
+getLengthOfWord = (word) => console.log(word.length)
+
+getLengthOfWord('Adam')
+
+
+Problem 17: same length
+
+sameLength = (word1,word2) => {
+    if(word1.length === word2.length) console.log('true')
+    else console.log('false')
+}
+
+sameLength('guvi','geek')
+
+
+Problem 18:  get nth element 
+
+getNthElement = (array,n) => {
+    console.log(array[n])
+}
+
+getNthElement([1,3,5],1)
+
+
+Problem 19: get last element
+
+getLastElement = (array) => console.log(array[array.length-1])
+getLastElement([1,2,3,4,5])
+
+
+Problem 20:  add property
+
+let car = {
+    
+}
+
+addProperty = (obj,key) => {
+    obj[key] = 'true'
+}
+
+addProperty(car,'door')
+
+console.log(car)
+
+
+problem 21: remove property 
+
+let car = {
+    'door': 5
+}
+removeProperty = (obj,key) => delete obj.key
+removeProperty(car,'door')
+
+
+problem 22: count possitive and negative
+
+let arr = [-5, 10, -3, 12, -9, 5, 90, 0, 1];
+
+countPositivesSumNegatives = (arr) => {
+   let possarr = arr.filter(v => {return v>0})
+   let negarr = arr.filter(v => {return v<0})
+   let first = possarr.reduce((a, b) => a + b, 0)
+   let second = negarr.reduce((a, b) => a + b, 0)
+   let arr2 = [first,second];
+   console.log(arr2)
+}
+
+countPositivesSumNegatives(arr)
+
+
+problem 23: get possitives
+
+getpossitives = (array) => {
+    let possarray = array.filter(v => {return v>0})
+    console.log(possarray)
+}
+
+getpossitives([1,2,3,-5,-7,-34])
+
+Problem 24: merge two array
+
+let a1 = [1,2,3,4,5]
+let a2 = [6,7,8,9]
+
+mergeArray = (array1,array2) => {
+    let output = [...array1,...array2]
+    console.log(output)
+}
+
+mergeArray(a1,a2)
+
+
+problem 25: maximum number in array 
+
+let array = [1,7,9,23,45,67]
+
+maxnum = (array) => {
+  array.sort((a,b) => {return a-b});
+console.log(array[array.length-1])  
+}
+
+maxnum(array)
+
+
+
+problem 26: reverse string
+
+reversestring = (string) => {
+    let output = string.split('').reverse().join('');
+    console.log(output);
+    
+}
+
+reversestring('helloworld')
+
+
+problem 27: First 100 prime numbers
+
+function isPrime(num) {
+    for ( var i = 2; i < num; i++ ) {
+        if ( num % i === 0 ) {
+            return false;
+        }
+    }
+    return true;
+}
+
+function first100prime(n) {
+    var arr = [2];
+    for ( var i = 3; i < n; i+=2 ) {
+        if ( isPrime(i) ) {
+            arr.push(i);
+        }
+    }
+    console.log(arr); 
+}
+
+first100prime(100)
+
+ 
+ 
+
+
